@@ -39,7 +39,7 @@ Graphql query to fetch only name form employee service:
 There are 2 ways to setup GraphQL:
 
 1. See the graphql.config package. The commented out code in GraphqlConfig shows a more low level method of connecting with graphql schema. Various resolvers like EmployeesResolver (that implement DataFetcher) are mapped to the query endpoints.
-2. More cleaner way is to create a query bean. See Query.java.
+2. More cleaner way is to create a query bean. See Query.java where the method names map to schema queries.
 
 **Theory** : https://dzone.com/articles/graphql-with-springboot
 
