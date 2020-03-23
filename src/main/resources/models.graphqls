@@ -12,3 +12,7 @@ type Employee{
    name: String!
    yearsOfService: Int
 }
+
+type Mutation{
+	addEmployee(id:Int name:String yearsOfService:Int): Employee
+}

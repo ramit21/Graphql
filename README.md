@@ -16,7 +16,7 @@ http://localhost:8080/graphiql
 
 Then execute below queries on graphiql interface (or postman with message type post, and message type raw/GraphQL):
 
-Graphql query to fetch name and yearsofService form employee service:
+Query to fetch name and yearsofService form employee service (by default {} means query{} ):
 ```
 {
   employees {
@@ -25,7 +25,7 @@ Graphql query to fetch name and yearsofService form employee service:
 }
 ```
 
-Graphql query to fetch only name form employee service:
+Query to fetch only name form employee service:
 ```
 {
   employees {
@@ -34,10 +34,19 @@ Graphql query to fetch only name form employee service:
 }
 ```
 
-Graphql query to fetch by id:
+Mutation query to create an object
+```
+mutation
+{
+  addEmployee(id:3 name:"Ramit" yearsOfService:10)
+  		{id,name,yearsOfService}
+}
+```
+
+Graphql query to fetch by id above created object:
 ```
 {
-  employeeById(id:2){name, id}
+  employeeById(id:3){name, id}
 }
 ```
 

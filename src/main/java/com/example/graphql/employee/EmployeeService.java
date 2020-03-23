@@ -28,4 +28,10 @@ public class EmployeeService {
 		}
 		return null;
 	}
+
+	public Employee createEmployee(int id, String name, int yearsOfService) {
+		Employee employee = new Employee(id, name, yearsOfService);
+		employees.add(employee);
+		return employee;
+	}
 }
