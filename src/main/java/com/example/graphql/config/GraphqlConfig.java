@@ -8,8 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 
-import com.example.graphql.employee.EmployeesResolver;
-
 import graphql.schema.GraphQLSchema;
 import graphql.schema.idl.RuntimeWiring;
 import graphql.schema.idl.SchemaGenerator;
@@ -25,6 +23,7 @@ public class GraphqlConfig {
     @Autowired
     EmployeesResolver employeesResolver; //our Employee resolver
 
+    /*
     @Bean
     public GraphQLSchema graphQLSchema(){
         SchemaParser schemaParser = new SchemaParser();
@@ -51,4 +50,5 @@ public class GraphqlConfig {
 
         return schemaGenerator.makeExecutableSchema(registry,wiring);
     }
+    */
 }
