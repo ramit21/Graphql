@@ -1,7 +1,7 @@
 # Graphql
 Graphql with spring boot
 
-**GraphQL** is a query language. It gives control to the user to query what he needs, thus reducing the payload on the network.
+**GraphQL** is a query language. It gives control to the user to query what he needs, thus reducing the payload on the network. The schema first approach of the graphql makes it very easy to share the schema with end users, unlike rest apis where you have to implement swagger to share the contract.
 
 Graphql qeries are basically POST Rest requests. The payload is converted to JSON only over the network.
 
@@ -43,7 +43,7 @@ mutation
 }
 ```
 
-Graphql query to fetch by id above created object:
+Query to fetch by id above created object:
 ```
 {
   employeeById(id:3){name, id}
