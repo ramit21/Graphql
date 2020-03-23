@@ -2,7 +2,7 @@ package com.example.graphql.employee;
 
 public class Employee {
 
-	private long id;
+	private int id;
 	private String name;
 	private int yearsOfService;
 
@@ -12,7 +12,7 @@ public class Employee {
 		this.yearsOfService = yearsOfService;
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 	

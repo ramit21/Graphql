@@ -34,6 +34,13 @@ Graphql query to fetch only name form employee service:
 }
 ```
 
+Graphql query to fetch by id:
+```
+{
+  employeeById(id:2){name, id}
+}
+```
+
 **GraphQL Setup**: 
 
 There are 2 ways to setup GraphQL:

@@ -4,6 +4,7 @@ schema {
 
 type Queries{
   employees: [Employee]
+  employeeById (id:Int): Employee
 }
 
 type Employee{

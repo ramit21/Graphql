@@ -2,6 +2,7 @@ package com.example.graphql.employee;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -20,4 +21,11 @@ public class EmployeeService {
 		return employees;
 	}
 
+	public Employee findById(int id) {
+		Optional<Employee> employee = employees.stream().filter(e->e.getId() == id).findFirst();
+		if(employee.isPresent()) {
+			return employee.get();
+		}
+		return null;
+	}
 }
